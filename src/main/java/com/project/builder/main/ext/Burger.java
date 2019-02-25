@@ -1,7 +1,7 @@
-package com.project.builder.main.impl;
+package com.project.builder.main.ext;
 
-import com.project.builder.main.Item;
-import com.project.builder.main.Packing;
+import com.project.builder.main.impl.Packing;
+import com.project.builder.main.impl.Wrapper;
 
 public abstract class Burger implements Item {
     @Override

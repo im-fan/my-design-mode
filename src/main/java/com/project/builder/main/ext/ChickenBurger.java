@@ -1,7 +1,5 @@
 package com.project.builder.main.ext;
 
-import com.project.builder.main.impl.Burger;
-
 /**
  * 创建扩展Burger的实体类
  *

@@ -1,4 +1,4 @@
-package com.project.builder.main;
+package com.project.builder.main.impl;
 
 /**
  *食物包装的接口 1

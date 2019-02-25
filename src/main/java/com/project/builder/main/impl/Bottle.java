@@ -1,7 +1,5 @@
 package com.project.builder.main.impl;
 
-import com.project.builder.main.Packing;
-
 /**
  * 创建包装接口实现类 2
  *
