@@ -1,6 +1,6 @@
 # 整理14种常用设计模式
 ```
-来源:http://www.runoob.com/design-pattern
+来源:http://www.runoob.com/design-patter
 ```
 
 ## 基础
