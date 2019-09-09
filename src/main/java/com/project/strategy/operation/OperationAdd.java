@@ -1,7 +1,5 @@
 package com.project.strategy.operation;
 
-import com.project.strategy.Computer;
-
 /**
  * 实现新增操作
  *

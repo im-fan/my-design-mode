@@ -1,7 +1,5 @@
 package com.project.singleton;
 
-import java.util.concurrent.ThreadPoolExecutor;
-
 /**
  * DoubleCheckedLocking
  *
