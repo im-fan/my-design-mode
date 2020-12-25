@@ -14,11 +14,12 @@ public class SingletonTwo {
     private SingletonTwo (){}
 
     public static SingletonTwo getSingleton() {
-        if (singleton == null) {
-            synchronized (SingletonTwo.class) {
-                if (singleton == null) {
-                    singleton = new SingletonTwo();
-                }
+        if (singleton != null) {
+            return singleton;
+        }
+        synchronized (SingletonTwo.class) {
+            if (singleton == null) {
+                singleton = new SingletonTwo();
             }
         }
         return singleton;

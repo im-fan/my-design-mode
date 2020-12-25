@@ -2,6 +2,7 @@ package com.project.builder;
 
 /**
  * 建造者模式demo
+ *  abstract class表示的是"is a"关系，interface表示的是"like a"关系
  *
  *@author: Weiyf
  *@Date: 2019-02-22 17:47

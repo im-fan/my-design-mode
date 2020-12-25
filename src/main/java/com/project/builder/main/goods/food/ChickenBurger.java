@@ -1,4 +1,4 @@
-package com.project.builder.main.ext;
+package com.project.builder.main.goods.food;
 
 /**
  * 创建扩展Burger的实体类

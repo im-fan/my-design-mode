@@ -21,11 +21,7 @@ public class SingletonThree {
     public static void main(String[] args){
         final SingletonThree singletonThree = SingletonThree.getInstance();
         for(int i=0; i<10; i++){
-            Runnable runnable = new Runnable() {
-                public void run() {
-                    System.out.println("===>" + Thread.currentThread() + " ==> " + singletonThree);
-                }
-            };
+            Runnable runnable = () -> System.out.println("===>" + Thread.currentThread() + " ==> " + singletonThree);
             runnable.run();
         }
     }

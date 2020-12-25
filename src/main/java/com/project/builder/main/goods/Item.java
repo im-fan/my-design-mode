@@ -1,6 +1,6 @@
-package com.project.builder.main.ext;
+package com.project.builder.main.goods;
 
-import com.project.builder.main.impl.Packing;
+import com.project.builder.main.pkg.Packing;
 
 /**
  *

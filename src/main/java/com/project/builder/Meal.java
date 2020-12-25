@@ -1,6 +1,6 @@
 package com.project.builder;
 
-import com.project.builder.main.ext.Item;
+import com.project.builder.main.goods.Item;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ public class Meal {
     public void showItems(){
         for(Item item : items){
             System.out.println("食品 : "+item.name()
-                    + ", 营业员 : "+item.packing().pack()
+                    + ", 包装 : "+item.packing().pack()
                     + ", 价格 : "+item.price());
         }
     }

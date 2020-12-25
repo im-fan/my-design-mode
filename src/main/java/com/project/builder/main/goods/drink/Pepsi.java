@@ -1,4 +1,4 @@
-package com.project.builder.main.ext;
+package com.project.builder.main.goods.drink;
 
 public class Pepsi extends ColdDrink {
     @Override
