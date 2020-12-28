@@ -1,7 +1,7 @@
 package com.project.facade;
 
 /**
- * 装饰者模式demo
+ * 外观模式demo
  *
  *@author: Weiyf
  *@Date: 2019-02-22 11:55

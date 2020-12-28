@@ -18,9 +18,11 @@ public class SingletonOne {
     }
 
     public static void main(String[] args){
-        SingletonOne singletonOne = SingletonOne.getInstance();
         for(int i=0; i<10; i++){
-            Runnable runnable = () -> System.out.println("===>"+Thread.currentThread() + " ==> " + singletonOne);
+            Runnable runnable = () -> {
+                SingletonOne singletonOne = SingletonOne.getInstance();
+                System.out.println("===>"+Thread.currentThread() + " ==> " + singletonOne);
+            };
             runnable.run();
         }
     }
