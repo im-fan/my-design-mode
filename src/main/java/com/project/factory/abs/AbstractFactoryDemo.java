@@ -13,6 +13,7 @@ public class AbstractFactoryDemo {
 
     public static void main(String[] args){
          AbsBmwFactory bmwFactory = new AbsBmwFactory();
+         // 抽象工厂先实例化造车工厂 -> 造车工厂再实例化出车型 -> 造车
          bmwFactory.carFactory().carFactory().createCar();
          bmwFactory.createAirCondition().makeAirCondition();
 
