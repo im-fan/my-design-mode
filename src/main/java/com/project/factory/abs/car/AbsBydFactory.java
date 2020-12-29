@@ -1,4 +1,4 @@
-package com.project.factory.abs;
+package com.project.factory.abs.car;
 
 import com.project.factory.abs.prodect.Aircondition;
 import com.project.factory.abs.prodect.BydAirCondition;

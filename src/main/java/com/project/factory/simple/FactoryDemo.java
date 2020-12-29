@@ -13,15 +13,26 @@ import com.project.factory.simple.function.Byd;
 public class FactoryDemo {
 
      public static void main(String[] args){
-        SimpleFactory simpleFactory = new SimpleFactory();
 
-        simpleFactory.carFactory("bmw").createCar();
-        simpleFactory.carFactory("byd").createCar();
-        simpleFactory.carFactory("wuling").createCar();
+         //方式一
+         buildByType();
 
-        simpleFactory.carFactory(Bmw.class).createCar();
-        simpleFactory.carFactory(Byd.class).createCar();
-        simpleFactory.carFactory(Car.class).createCar();
+         //方式二
+         buildByClass();
+     }
+
+     public static void buildByType(){
+         SimpleFactory simpleFactory = new SimpleFactory();
+         simpleFactory.carFactory(SimpleFactory.BMW).createCar();
+         simpleFactory.carFactory(SimpleFactory.BYD).createCar();
+         simpleFactory.carFactory("五菱").createCar();
+     }
+
+     public static void buildByClass(){
+         SimpleFactory simpleFactory = new SimpleFactory();
+         simpleFactory.carFactory(Bmw.class).createCar();
+         simpleFactory.carFactory(Byd.class).createCar();
+         simpleFactory.carFactory(Object.class).createCar();
      }
 
 }

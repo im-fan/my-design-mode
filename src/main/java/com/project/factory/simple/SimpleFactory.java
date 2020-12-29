@@ -12,34 +12,33 @@ import com.project.factory.simple.function.Byd;
  */
 public class SimpleFactory {
 
+    public static final String BMW = "bmw";
+    public static final String BYD = "byd";
+
     /** 第一种方式，通过传参实现
      *  缺点:扩展不方便
      * **/
     public Car carFactory(String type){
-        if("bmw".equals(type)){
+        if(BMW.equals(type)){
             return new Bmw();
-        } else if ("byd".equals(type)){
+        } else if (BYD.equals(type)){
             return new Byd();
         } else {
-            return new Car() {
-                @Override
-                public void createCar() {
-                    System.out.println("车系暂不支持");
-                }
-            };
+            return () -> System.out.println("车系暂不支持");
         }
     }
 
     /** 第二种方式，通过反射实现 **/
     public Car carFactory(Class clazz){
         try{
-
-            return (Car) Class.forName(clazz.getName()).newInstance();
-
+            Class classIns = Class.forName(clazz.getName());
+            if(classIns != null){
+                return (Car) classIns.newInstance();
+            }
         } catch (Exception e){
-
-            return () -> System.out.println("车系暂不支持");
+            //System.out.println(e);
         }
+        return () -> System.out.println("车系暂不支持");
     }
 
 }

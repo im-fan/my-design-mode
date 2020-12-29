@@ -1,5 +1,8 @@
 package com.project.factory.abs;
 
+import com.project.factory.abs.car.AbsBmwFactory;
+import com.project.factory.abs.car.AbsBydFactory;
+
 /**
  * 抽象工厂示例
  *
