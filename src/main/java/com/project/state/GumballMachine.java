@@ -1,11 +1,8 @@
 package com.project.state;
 
-import com.project.state.handler.HasQuarterState;
-import com.project.state.handler.NoQuarterState;
-import com.project.state.handler.SoldOutState;
-import com.project.state.handler.SoldState;
+import com.project.state.handler.*;
 
-public class GumballMachine extends State{
+public class GumballMachine extends State {
     public State noQuarterState = new NoQuarterState(this);
     public State hasQuarterState = new HasQuarterState(this);
     public State soldState = new SoldState(this);

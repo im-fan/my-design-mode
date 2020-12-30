@@ -1,7 +1,6 @@
 package com.project.state.handler;
 
 import com.project.state.GumballMachine;
-import com.project.state.State;
 
 /**
  * 售尽的状态
